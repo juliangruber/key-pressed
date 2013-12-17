@@ -30,6 +30,8 @@ Check if `codes` are currently pressed.
 
 All arguments must be pressed, but if an argument is an array, it's enough when one of the codes in that array is pressed.
 
+Supports `keyCode`s, `alt`, `ctrl`, `meta` and `shift.
+
 ### pressed.unbind()
 
 Stop listening for events.
