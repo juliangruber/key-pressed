@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>key pressed</title>
+</head>
+<body>
+  <button id="cmd">Check for CMD key</button>
+  <button id="shift">Check for Shift key</button>
+  <button id="shift_cmd">Check for Shift+CMD key</button>
+  <script src="build/build.js"></script>
+  <script>
+    var pressed = require('key-pressed')();
+    
+    cmd.onclick = function() {
+      console.log('CMD pressed: ' + pressed([224, 17, 91, 93]));
+    };
+    
+    shift.onclick = function() {
+      console.log('Shift pressed: ' + pressed('shift'));
+    };
+    
+    shift_cmd.onclick = function() {
+      var p = pressed('shift', [224, 17, 91, 93]);
+      console.log('Shift+CMD pressed: ' + p);
+    };
+  </script>
+</body>
+</html>

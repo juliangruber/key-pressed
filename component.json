@@ -1,0 +1,14 @@
+{
+  "name": "key-pressed",
+  "repo": "juliangruber/key-pressed",
+  "description": "Check if one or more keys are currently pressed",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
